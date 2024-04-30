@@ -1,0 +1,34 @@
+:root {
+    --light: #faf8f8;
+    --dark: #141021;
+    --secondary: #3F6149;
+    --tertiary: #362D2C;
+    --visited: #40A15D;
+    --primary: #f28482;
+    --gray: #3f3f3f;
+    --lightgray: #f0f0f0;
+    --outlinegray: #dadada;
+    --million-progress-bar-color: var(--secondary);
+    --highlighted: #8446ff88;
+    --header: #22E05B;
+    --title: #362D2C;
+    --scrollbar: gray;
+    --scrollbar-track: #DDD;
+}
+
+[saved-theme="dark"] {
+    --light: #1e1e21 !important;
+    --dark: #362D2C !important;
+    --secondary: #40A15D !important;
+    --visited: #E02322 !important;
+    --tertiary: #3F6149 !important;
+    --primary: #f58382 !important;
+    --gray: #d4d4d4 !important;
+    --lightgray: #292633 !important;
+    --outlinegray: #343434 !important;
+    --highlighted: #574010;
+    --header: #22E05B;
+    --title: #40A15D;
+    --scrollbar: rgb(177, 177, 177);
+    --scrollbar-track: rgb(51, 51, 51);
+}

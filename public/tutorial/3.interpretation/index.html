@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta property="og:title" content="" />
+<meta property="og:description" content="Interpretation #  Once variants have been called, the following steps depend on the type of study and the experimental design. For large population studies, like case-control association analyses, an appropriate large-scale statistical approach will be chosen and different statistical or analytical tools will be used to carry out the tertiary analyses.
+When only a few individuals are involved, and in particular in clinical contexts, the goal will be to interpret the findings in light of different sources of information and pinpoint a causative variant for the investigated phenotype." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/tutorial/3.interpretation/" /><meta property="article:section" content="tutorial" />
+
+<meta property="og:site_name" content="📓 Amethyst" />
+
+<title>3.Interpretation | 📓 Amethyst</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.5a2664b4517d55ec16199b62d0903d0484859e7f9aded9023c0b399e6a03e519.css" integrity="sha256-WiZktFF9VewWGZti0JA9BISFnn&#43;a3tkCPAs5nmoD5Rk=" crossorigin="anonymous">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+  
+
+
+
+<meta charset="UTF-8" />
+<meta
+  name="description"
+  content="Interpretation #  Once variants have been called, the following steps depend on the type of study and the experimental design. For large population studies, like case-control association analyses, an appropriate large-scale statistical approach will be chosen and different statistical or analytical tools will be used to carry out the tertiary analyses.
+When only a few individuals are involved, and in particular in clinical contexts, the goal will be to interpret the findings in light of different sources of information and pinpoint a causative variant for the investigated phenotype."
+/>
+<title>
+  📓 Amethyst
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+
+
+
+<link rel="shortcut icon" type="image/png"  href="http://example.org//favicon.png" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<link href="http://example.org/styles.e08ceb33360cec132feb69cfb982e2a4.min.css" rel="stylesheet" />
+
+
+<link href="http://example.org/quartz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
+
+  
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+        integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+        integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js"
+        integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A"
+        crossorigin="anonymous"></script>
+
+  
+
+
+
+
+
+
+<script src="http://example.org/quartz/js/darkmode.2dde094b8728e01ab3f1666d1d15dd1b.min.js"></script>
+
+
+
+<script src="http://example.org/quartz/js/util.c69e233dc1cc331a30b0f670e657b425.min.js"></script>
+
+
+
+<script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+<script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+
+<script src="http://example.org/quartz/js/popover.f03552ccb84d99ca615d1cfb9abde59e.min.js"></script>
+
+
+
+
+<script defer src="http://example.org/quartz/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js"></script>
+
+
+
+
+<script defer src="http://example.org/quartz/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js"></script>
+
+
+
+
+<script defer src="http://example.org/quartz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js"></script>
+
+
+
+ 
+<script>
+  const SEARCH_ENABLED =  false 
+  const LATEX_ENABLED =  true 
+  const PRODUCTION =  true 
+  const BASE_URL = "http://example.org/"
+  const fetchData = Promise.all([
+        fetch("http:\/\/example.org\/indices\/linkIndex.f6425e3c9c5a78cb1a57d6271bd0c88d.min.json")
+          .then(data => data.json())
+          .then(data => ({
+            index: data.index,
+            links: data.links,
+          })),
+        fetch("http:\/\/example.org\/indices\/contentIndex.56753ef950db2332e50166167e5b613e.min.json")
+          .then(data => data.json()),
+      ])
+      .then(([{index, links}, content]) => ({
+        index,
+        links,
+        content,
+      }))
+
+    const render = () => {
+    
+    const siteBaseURL = new URL(BASE_URL);
+    const pathBase = siteBaseURL.pathname;
+    const pathWindow = window.location.pathname;
+    const isHome = pathBase == pathWindow;
+
+    addCopyButtons();
+    
+
+    
+
+    addCollapsibleCallouts();
+    
+
+    
+    initPopover(
+      "http://example.org",
+       true 
+    )
+    
+
+    
+
+    
+      var els = document.getElementsByClassName("mermaid");
+      if (els.length > 0) {
+        import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
+          (obj) => {
+            
+            
+            obj.default.init();
+          }
+        )
+      }
+    
+  }
+
+  const init = (doc = document) => {
+    
+    addCopyButtons();
+    
+
+    addTitleToCodeBlocks();
+    renderMathInElement(doc.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+      ],
+      macros: {
+        '’': "'"
+      },
+      throwOnError : false
+    });
+    
+  };
+</script>
+
+<script>
+  window.Million = {
+    navigate: (url) => (window.location.href = url),
+    prefetch: () => {},
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    init()
+    render()
+  })
+</script>
+
+
+</head>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"
+  integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
+
+<script defer src="http://example.org/quartz/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js"></script>
+
+
+
+<header class="book-header">
+    
+    <label for="menu-control">
+      <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+    </label>
+    <h1 id="page-title"><a href="http://example.org/">📓 Amethyst</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon" class="quartz-search">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+</header>
+
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <main class="flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<div class="menu-search">
+  <div id="search-icon" class="quartz-search">
+    <p>Search</p>
+    <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7">
+      <title id="title">Search Icon</title>
+      <desc id="desc">Icon to open search</desc>
+      <g class="search-path" fill="none">
+        <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+        <circle cx="8" cy="8" r="7" />
+      </g>
+    </svg>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span class="book-menu-title">Getting Started</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/tutorial/1.theory/" class="">1.Theory</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/tutorial/2.sarek/" class="">2.Sarek</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/tutorial/3.interpretation/" class="active">3.Interpretation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/64bitpandas/amethyst"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+    <div class="book-page container">
+      
+
+      
+      
+  <article class="markdown">
+    <h1 class="title">3.Interpretation</h1>
+    
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+<h1 id="interpretation">
+  Interpretation
+  <a class="anchor" href="#interpretation">#</a>
+</h1>
+<p>Once variants have been called, the following steps depend on the type of study and the experimental design.
+For large population studies, like case-control association analyses, an appropriate large-scale statistical approach will be chosen and different statistical or analytical tools will be used to carry out the tertiary analyses.</p>
+<p>When only a few individuals are involved, and in particular in clinical contexts, the goal will be to interpret the findings in light of different sources of information and pinpoint a causative variant for the investigated phenotype.</p>
+<h2 id="overview">
+  Overview
+  <a class="anchor" href="#overview">#</a>
+</h2>
+<p>When variants have been called, and a diagnosis is necessary, investigators will need to combine:</p>
+<ul>
+<li>the predictions resulting from annotations like the one we carried out</li>
+<li>biological and clinical information</li>
+</ul>
+<p>with the goal of narrowing the search space and reducing the number of variants to be inspected.
+This approach is summarised in the diagram below:</p>
+<!-- raw HTML omitted -->
+<p>Once the list of variants has been reduced, more in-depth analyses of the reported cases and the genomic region in existing databases might be useful to reach a conclusion.</p>
+<h2 id="finding-causative-variants">
+  Finding Causative Variants
+  <a class="anchor" href="#finding-causative-variants">#</a>
+</h2>
+<p>Some of these steps might be carried out via software. For this tutorial however, we chose to perform these steps one by one in order to get a better view of the rationale behind this approach.</p>
+<p>We will start by looking at the annotated VCF, which is found at this location in our GitPod environment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /workspace/gitpod/nf-training/variantcalling/annotation/haplotypecaller/joint_variant_calling
+</code></pre></div><p>Here, we should verify in which order the two samples we used for this analysis have been written in the VCF file. We can do that by grepping the column names row of the file, and printing at screen the fields from 10th onwards, i.e. the sample columns:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zcat joint_germline_recalibrated_snpEff.ann.vcf.gz | grep <span style="color:#e6db74">&#34;#CHROM&#34;</span> | cut -f 10-
+</code></pre></div><p>This returns:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">case_case       control_control
+</code></pre></div><p>showing that case variants have been written in field 10th and control variants in field 11th.</p>
+<p>Next, in this educational scenario we might assume that an affected individual (case) will carry at least one alternative allele for the causative variant, while the control individual will be a homozygous for the reference.
+With this assumption in mind, and a bit of one-liner code, we could first filter the homozygous for the alternative allele in our case, and then the heterozygous.</p>
+<p>In this first one, we can use the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zcat joint_germline_recalibrated_snpEff.ann.vcf.gz | grep PASS | grep HIGH | perl -nae <span style="color:#e6db74">&#39;if($F[10]=~/0\/0/ &amp;&amp; $F[9]=~/1\/1/){print $_;}&#39;</span>
+</code></pre></div><p>which results in the following variant.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chr21   <span style="color:#ae81ff">32576780</span>        rs541034925     A       AC      332.43  PASS    AC<span style="color:#f92672">=</span>2;AF<span style="color:#f92672">=</span>0.5;AN<span style="color:#f92672">=</span>4;DB;DP<span style="color:#f92672">=</span>94;ExcessHet<span style="color:#f92672">=</span>0;FS<span style="color:#f92672">=</span>0;MLEAC<span style="color:#f92672">=</span>2;MLEAF<span style="color:#f92672">=</span>0.5;MQ<span style="color:#f92672">=</span>60;POSITIVE_TRAIN_SITE;QD<span style="color:#f92672">=</span>33.24;SOR<span style="color:#f92672">=</span>3.258;VQSLOD<span style="color:#f92672">=</span>953355.11;culprit<span style="color:#f92672">=</span>FS;ANN<span style="color:#f92672">=</span>AC|frameshift_variant|HIGH|TCP10L|ENSG00000242220|transcript|ENST00000300258.8|protein_coding|5/5|c.641dupG|p.Val215fs|745/3805|641/648|214/215<span style="color:#f92672">||</span>,AC|frameshift_variant|HIGH|CFAP298-TCP10L|ENSG00000265590|transcript|ENST00000673807.1|protein_coding|8/8|c.1163dupG|p.Val389fs|1785/4781|1163/1170|388/389<span style="color:#f92672">||</span>  GT:AD:DP:GQ:PL  1/1:0,10:10:30:348,30,0 0/0:81,0:81:99:0,119,1600
+</code></pre></div><p>Now we can search for this variant in the 
+<a href="https://gnomad.broadinstitute.org" rel="noopener">gnomAD database</a>, which hosts variants and genomic information from sequencing data of almost one million individuals (see 
+<a href="https://gnomad.broadinstitute.org/news/2023-11-gnomad-v4-0/" rel="noopener">v4 release</a>).</p>
+<p>In order to search for the variant we can type its coordinates in the search field and choose the proposed variant corresponding to the exact position we need. See the figure below:</p>
+<p>
+
+
+<img src="http://example.org/tutorial/./img/gnomad_search.png" width="auto" alt="gnomad search"  /></p>
+<p>the resulting 
+<a href="https://gnomad.broadinstitute.org/region/21-32576780-32576780?dataset=gnomad_r4" rel="noopener">variant data</a> show that our variant is present, and that it&rsquo;s been described already in 
+<a href="https://www.ncbi.nlm.nih.gov/clinvar/" rel="noopener">ClinVar</a>, where the provided interpretation (Clinical Significance) is &ldquo;Benign&rdquo;.</p>
+<p>We can see the resulting table in the following image:</p>
+<p>
+
+
+<img src="http://example.org/tutorial/./img/gnomad_var_present.png" width="auto" alt="gnomad results"  /></p>
+<p>Quite importantly, the gnomAD database allows us to gather more information on the gene this variant occurs in. We can inspect the so called &ldquo;constraint data&rdquo;, by clicking on the gene name and inspecting the &ldquo;constraint&rdquo; table on the top right of the page.</p>
+<p>
+
+
+<img src="http://example.org/tutorial/./img/gnomad_constraint.png" width="auto" alt="constraint"  /></p>
+<p>This information gives us a better view of the selective pressure variation on this gene might be subject to, and therefore inform our understanding of the potential impact of a loss of function variant in this location.</p>
+<p>In this specific case however the gene is not under purifying selection neither for loss of function variants (LOEUF 0.89) nor for missense ones.</p>
+<p>We can continue our analysis by looking at the heterozygous variants in our case, for which the control carries a reference homozygous, with the code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zcat joint_germline_recalibrated_snpEff.ann.vcf.gz | grep PASS | grep HIGH | perl -nae <span style="color:#e6db74">&#39;if($F[10]=~/0\/0/ &amp;&amp; $F[9]=~/0\/1/){print $_;}&#39;</span>
+</code></pre></div><p>This will results in the following list of variants:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chr21   <span style="color:#ae81ff">44339194</span>        rs769070783     T       C       57.91   PASS    AC<span style="color:#f92672">=</span>1;AF<span style="color:#f92672">=</span>0.25;AN<span style="color:#f92672">=</span>4;BaseQRankSum<span style="color:#f92672">=</span>-2.373;DB;DP<span style="color:#f92672">=</span>84;ExcessHet<span style="color:#f92672">=</span>0;FS<span style="color:#f92672">=</span>0;MLEAC<span style="color:#f92672">=</span>1;MLEAF<span style="color:#f92672">=</span>0.25;MQ<span style="color:#f92672">=</span>60;MQRankSum<span style="color:#f92672">=</span>0;POSITIVE_TRAIN_SITE;QD<span style="color:#f92672">=</span>3.41;ReadPosRankSum<span style="color:#f92672">=</span>-0.283;SOR<span style="color:#f92672">=</span>0.859;VQSLOD<span style="color:#f92672">=</span>198.85;culprit<span style="color:#f92672">=</span>FS;ANN<span style="color:#f92672">=</span>C|start_lost|HIGH|CFAP410|ENSG00000160226|transcript|ENST00000397956.7|protein_coding|1/7|c.1A&gt;G|p.Met1?|200/1634|1/1128|1/375<span style="color:#f92672">||</span>,C|upstream_gene_variant|MODIFIER|ENSG00000232969|ENSG00000232969|transcript|ENST00000426029.1|pseudogene<span style="color:#f92672">||</span>n.-182T&gt;C<span style="color:#f92672">||||</span>|182|,C|downstream_gene_variant|MODIFIER|ENSG00000184441|ENSG00000184441|transcript|ENST00000448927.1|pseudogene<span style="color:#f92672">||</span>n.*3343T&gt;C<span style="color:#f92672">||||</span>|3343|;LOF<span style="color:#f92672">=(</span>CFAP410|ENSG00000160226|1|1.00<span style="color:#f92672">)</span>   GT:AD:DP:GQ:PL  0/1:8,9:17:66:66,0,71   0/0:67,0:67:99:0,118,999
+chr21   <span style="color:#ae81ff">44406660</span>        rs139273180     C       T       35.91   PASS    AC<span style="color:#f92672">=</span>1;AF<span style="color:#f92672">=</span>0.25;AN<span style="color:#f92672">=</span>4;BaseQRankSum<span style="color:#f92672">=</span>-4.294;DB;DP<span style="color:#f92672">=</span>127;ExcessHet<span style="color:#f92672">=</span>0;FS<span style="color:#f92672">=</span>5.057;MLEAC<span style="color:#f92672">=</span>1;MLEAF<span style="color:#f92672">=</span>0.25;MQ<span style="color:#f92672">=</span>60;MQRankSum<span style="color:#f92672">=</span>0;POSITIVE_TRAIN_SITE;QD<span style="color:#f92672">=</span>0.51;ReadPosRankSum<span style="color:#f92672">=</span>0.526;SOR<span style="color:#f92672">=</span>1.09;VQSLOD<span style="color:#f92672">=</span>269.00;culprit<span style="color:#f92672">=</span>FS;ANN<span style="color:#f92672">=</span>T|stop_gained|HIGH|TRPM2|ENSG00000142185|transcript|ENST00000397932.6|protein_coding|19/33|c.2857C&gt;T|p.Gln953*|2870/5216|2857/4662|953/1553<span style="color:#f92672">||</span>;LOF<span style="color:#f92672">=(</span>TRPM2|ENSG00000142185|1|1.00<span style="color:#f92672">)</span>;NMD<span style="color:#f92672">=(</span>TRPM2|ENSG00000142185|1|1.00<span style="color:#f92672">)</span>       GT:AD:DP:GQ:PL  0/1:48,22:71:44:44,0,950        0/0:51,0:51:99:0,100,899
+chr21   <span style="color:#ae81ff">45989090</span>        .       C       T       43.91   PASS    AC<span style="color:#f92672">=</span>1;AF<span style="color:#f92672">=</span>0.25;AN<span style="color:#f92672">=</span>4;BaseQRankSum<span style="color:#f92672">=</span>2.65;DP<span style="color:#f92672">=</span>89;ExcessHet<span style="color:#f92672">=</span>0;FS<span style="color:#f92672">=</span>4.359;MLEAC<span style="color:#f92672">=</span>1;MLEAF<span style="color:#f92672">=</span>0.25;MQ<span style="color:#f92672">=</span>60;MQRankSum<span style="color:#f92672">=</span>0;QD<span style="color:#f92672">=</span>2.58;ReadPosRankSum<span style="color:#f92672">=</span>-1.071;SOR<span style="color:#f92672">=</span>1.863;VQSLOD<span style="color:#f92672">=</span>240.19;culprit<span style="color:#f92672">=</span>FS;ANN<span style="color:#f92672">=</span>T|stop_gained|HIGH|COL6A1|ENSG00000142156|transcript|ENST00000361866.8|protein_coding|9/35|c.811C&gt;T|p.Arg271*|892/4203|811/3087|271/1028<span style="color:#f92672">||</span>;LOF<span style="color:#f92672">=(</span>COL6A1|ENSG00000142156|1|1.00<span style="color:#f92672">)</span>;NMD<span style="color:#f92672">=(</span>COL6A1|ENSG00000142156|1|1.00<span style="color:#f92672">)</span>        GT:AD:DP:GQ:PL  0/1:10,7:18:51:52,0,51  0/0:70,0:70:99:0,120,1800
+</code></pre></div><p>If we search them one by one, we will see that one in particular occurs on a gene (COL6A1) which was previously reported as constrained for loss of function variants in the database version 2.1:</p>
+<p>
+
+
+<img src="http://example.org/tutorial/./img/gnomad_col6a1_v2.1.png" width="auto" alt="col6a1v2"  /></p>
+<p>while the version 4.0 of the database, resulting from almost one million samples, reports the gene as <em>not</em> constrained:</p>
+<p>
+
+
+<img src="http://example.org/tutorial/./img/gnomad_col6a1_v4.0.png" width="auto" alt="col6a1v4"  /></p>
+<p>We can search for this variant in ClinVar by using an advanced search and limiting our search to both chromosome and base position, like indicated in figure below:</p>
+<p>
+
+
+<img src="http://example.org/tutorial/./img/clinvar_search.png" width="auto" alt="clinvar search"  /></p>
+<p>This will return two results: one deletion and one single nucleotide variant C&gt;T corresponding to the one we called in the case individual:</p>
+<p>
+
+
+<img src="http://example.org/tutorial/./img/clinvar_results.png" width="auto" alt="clinvar results"  /></p>
+<p>If we click on the nomenclature of the variant we found, we will be able to access the data provided with the submission. In 
+<a href="https://www.ncbi.nlm.nih.gov/clinvar/variation/497373/" rel="noopener">this page</a> we can see that multiple submitters have provided an interpretation for this nonsense mutation (2 stars).
+Under the section &ldquo;Submitted interpretations and evidence&rdquo; we can gather additional data on the clinical information that led the submitters to classify the variant as &ldquo;pathogenic&rdquo;.</p>
+<h2 id="conclusions">
+  Conclusions
+  <a class="anchor" href="#conclusions">#</a>
+</h2>
+<p>After narrowing down our search and inspecting genomic context and clinical information, we can conclude that the variant</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chr21   <span style="color:#ae81ff">45989090</span>        C       T       AC<span style="color:#f92672">=</span>1;AF<span style="color:#f92672">=</span>0.25;AN<span style="color:#f92672">=</span>4;BaseQRankSum<span style="color:#f92672">=</span>2.37;DP<span style="color:#f92672">=</span>86;ExcessHet<span style="color:#f92672">=</span>0;FS<span style="color:#f92672">=</span>0;MLEAC<span style="color:#f92672">=</span>1;MLEAF<span style="color:#f92672">=</span>0.25;MQ<span style="color:#f92672">=</span>60;MQRankSum<span style="color:#f92672">=</span>0;QD<span style="color:#f92672">=</span>2.99;ReadPosRankSum<span style="color:#f92672">=</span>-0.737;SOR<span style="color:#f92672">=</span>1.022;VQSLOD<span style="color:#f92672">=</span>9.09;culprit<span style="color:#f92672">=</span>QD;ANN<span style="color:#f92672">=</span>T|stop_gained|HIGH|COL6A1|ENSG00000142156|transcript|ENST00000361866.8|protein_coding|9/35|c.811C&gt;T|p.Arg271*|892/4203|811/3087|271/1028<span style="color:#f92672">||</span>;LOF<span style="color:#f92672">=(</span>COL6A1|ENSG00000142156|1|1.00<span style="color:#f92672">)</span>;NMD<span style="color:#f92672">=(</span>COL6A1|ENSG00000142156|1|1.00<span style="color:#f92672">)</span>     GT:AD:DP:GQ:PL       0/1:8,6:15:40:50,0,40   0/0:70,0:70:99:0,112,1494
+</code></pre></div><p>is most likely the causative one, because it creates a premature stop in the COL6A1 gene, with loss of function variants on this gene known to be pathogenic.</p>
+
+
+    
+
+<hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      No backlinks found
+    </li>
+    
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="http://example.org/quartz/js/graph.cbd78cfa87df7d3e230d16fc24f06548.js"></script>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p>Made with <a href="https://github.com/64bitpandas/amethyst">Amethyst</a>, © 2024 Ben Cuan</p>
+        <ul>
+            
+            <li><a href="http://example.org/">Home</a></li>
+            <li><a href="https://bencuan.me">Website</a></li><li><a href="https://blog.bencuan.me">Blog</a></li></ul>
+    </footer>
+</div>
+
+
+    
+  </article>
+ 
+      
+      
+      
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#finding-causative-variants">Finding Causative Variants</a></li>
+    <li><a href="#conclusions">Conclusions</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+---
+enableToc: false
+title: "nf-core/sarek tutorial"
+---
+
+These pages are a tutorial workshop for the [Nextflow](https://www.nextflow.io) pipeline [nf-core/sarek](https://nf-co.re/sarek).
+
+In this workshop, we will recap the application of next generation sequencing to identify genetic variations in a genome. You will learn how to use the pipeline sarek to carry out this data-intensive workflow efficiently. We will cover topics such as experimental design, configuration of the pipeline and code execution.
+
+Please note that this is not an introductory workshop, and we will assume some basic familiarity with Nextflow.
+
+By the end of this workshop, you will have the skills and knowledge to run the sarek workflow and customise some of its features for your own variant calling analyses.
+
+Let's get started!

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/tutorial/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://example.org/tutorial/1.theory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tutorial/1.theory/</guid>
+      <description>Calling Variants on Sequencing Data #  Before we dive into one of the nf-core pipelines used for variant calling, it&amp;rsquo;s worth looking at some theoretical aspects of variant calling.
+Overview #  The term &amp;ldquo;variant calling&amp;rdquo; is rooted in the history of DNA sequencing, and it indicates an approach where we identify (i.e. call) positions in a genome (loci) which are variable in a population (genetic variants). The specific genotype of an individual at that variant locus is then assigned.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/tutorial/2.sarek/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tutorial/2.sarek/</guid>
+      <description>Sarek: a Variant Calling Pipeline #  In order to carry out a germline variant calling analysis we will use the nf-core pipeline sarek.
+Overview #  The pipeline is organised following the three main analysis blocks we previously described: pre-processing, variant calling and annotation.
+ In each analysis block, the user can choose among a range of different options in terms of aligners, callers and software to carry out the annotation.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/tutorial/3.interpretation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tutorial/3.interpretation/</guid>
+      <description>Interpretation #  Once variants have been called, the following steps depend on the type of study and the experimental design. For large population studies, like case-control association analyses, an appropriate large-scale statistical approach will be chosen and different statistical or analytical tools will be used to carry out the tertiary analyses.
+When only a few individuals are involved, and in particular in clinical contexts, the goal will be to interpret the findings in light of different sources of information and pinpoint a causative variant for the investigated phenotype.</description>
+    </item>
+    
+  </channel>
+</rss>
