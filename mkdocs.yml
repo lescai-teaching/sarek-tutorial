@@ -1,1 +1,76 @@
-site_name: My Docs
+site_name: nf-core/sarek tutorial
+site_url: http://lescai-teaching.github.io/sarek-tutorial
+repo_url: http://github.com/lescai-teaching/sarek-tutorial
+repo_name: lescai-teaching/sarek-tutorial
+
+nav:
+    - Home: index.md
+    - Sarek Tutorial:
+            - theory.md
+            - sarek.md
+            - interpretation.md
+
+theme:
+    name: material
+    palette:
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+              icon: material/weather-night
+              name: Switch to light mode
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+    font:
+        text: Inter
+    features:
+        - content.action.edit
+        - content.code.annotate
+        - content.code.copy
+        - navigation.footer
+        - navigation.tabs
+        - navigation.top
+        - navigation.tracking
+        - search.share
+        - toc.follow
+    icon:
+        repo: fontawesome/brands/github
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - md_in_html
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight:
+          anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.snippets:
+          base_path: ["."]
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
+    - pymdownx.arithmatex:
+          generic: true
+    - tables
+    - toc:
+          title: On this page
+          permalink: true
+plugins:
+    - social:
+          cards: !ENV [CARDS, true]
+          cards_color:
+              fill: "#58BD9F"
+              text: "#FFFFFF"
+extra_javascript:
+    - javascripts/mathjax.js
+    - https://polyfill.io/v3/polyfill.min.js?features=es6
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
