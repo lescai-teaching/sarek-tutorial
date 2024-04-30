@@ -53,7 +53,7 @@ Following the considerations above, we will first of all edit the `nextflow.conf
 It is sufficient to add the following code to the `parameters` directive in the config.
 
 ```groovy
-igenomes_base = '/workspace/gitpod/nf-training/data/refs/'
+igenomes_base = '/workspace/gitpod/training/data/refs/'
 genomes {
 	'GRCh38chr21' {
 		bwa                   = "${params.igenomes_base}/sequence/Homo_sapiens_assembly38_chr21.fasta.{amb,ann,bwt,pac,sa}"
@@ -127,12 +127,12 @@ Now we are ready to launch the pipeline, and we can use the following command li
 
 ```bash
 nextflow run nf-core/sarek \
---input /workspace/gitpod/nf-training/data/reads/variantcalling/sarek-input.csv \
+--input /workspace/gitpod/training/data/reads/sarek-input.csv \
 --outdir . \
 --tools haplotypecaller,snpeff \
 --genome GRCh38chr21 \
 --joint_germline \
---intervals /workspace/gitpod/nf-training/variantcalling/exome_target_hg38_chr21.bed \
+--intervals /workspace/gitpod/training/exome_target_hg38_chr21.bed \
 --wes
 ```
 
