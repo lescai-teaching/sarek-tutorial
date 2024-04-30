@@ -1,4 +1,4 @@
-baseURL: https://amethyst.bencuan.me
+baseURL: https://github.com/lescai-teaching
 
 # Book configuration
 disablePathToLower: false
@@ -25,7 +25,7 @@ menu:
   #     weight: 10
   after:
     - name: "Github"
-      url: "https://github.com/64bitpandas/amethyst"
+      url: "https://github.com/lescai-teaching/sarek-tutorial"
       weight: 10
 
 params:
@@ -64,7 +64,7 @@ params:
 
   # whether to display an 'edit' button next to the last edited field
   # that links to github
-  enableGitHubEdit: true
+  enableGitHubEdit: false
 
   # whether to render mermaid diagrams
   enableMermaid: true
@@ -85,10 +85,10 @@ params:
   
   # Footer links
   links:
-    - link_name: Website
-      link: https://bencuan.me
-    - link_name: Blog
-      link: https://blog.bencuan.me
+    - link_name: Teaching Repos
+      link: https://github.com/lescai-teaching
+    - link_name: e-learning platform
+      link: http://elearning.unipv.it
 
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
@@ -110,7 +110,7 @@ params:
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo: https://github.com/64bitpandas/amethyst
+  BookRepo: https://github.com/lescai-teaching/sarek-tutorial
 
   # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
   # commit hash for 'doc' page type.
@@ -134,7 +134,7 @@ params:
   # By default partals/docs/comments.html includes Disqus template
   # See https://gohugo.io/content-management/comments/#configure-disqus
   # Can be overwritten by same param in page frontmatter
-  BookComments: true
+  BookComments: false
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
