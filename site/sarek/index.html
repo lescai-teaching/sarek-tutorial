@@ -776,7 +776,7 @@ The format is described in the <a href="https://nf-co.re/sarek/3.3.2/docs/usage#
 <h3 id="reference-genome_1">Reference Genome<a class="headerlink" href="#reference-genome_1" title="Permanent link">&para;</a></h3>
 <p>Following the considerations above, we will first of all edit the <code>nextflow.config</code> file in our working directory to add a new genome.
 It is sufficient to add the following code to the <code>parameters</code> directive in the config.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">igenomes_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;/workspace/gitpod/nf-training/data/refs/&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">igenomes_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;/workspace/gitpod/training/data/refs/&#39;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">genomes</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="s1">&#39;GRCh38chr21&#39;</span><span class="w"> </span><span class="o">{</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="n">bwa</span><span class="w">                   </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;${params.igenomes_base}/sequence/Homo_sapiens_assembly38_chr21.fasta.{amb,ann,bwt,pac,sa}&quot;</span>
@@ -836,12 +836,12 @@ In order to account for this, we have to change the filtering options and limit 
 <h3 id="launching-the-pipeline">Launching the pipeline<a class="headerlink" href="#launching-the-pipeline" title="Permanent link">&para;</a></h3>
 <p>Now we are ready to launch the pipeline, and we can use the following command line:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>nextflow<span class="w"> </span>run<span class="w"> </span>nf-core/sarek<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>--input<span class="w"> </span>/workspace/gitpod/nf-training/data/reads/variantcalling/sarek-input.csv<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>--input<span class="w"> </span>/workspace/gitpod/training/data/reads/sarek-input.csv<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>--outdir<span class="w"> </span>.<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>--tools<span class="w"> </span>haplotypecaller,snpeff<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>--genome<span class="w"> </span>GRCh38chr21<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>--joint_germline<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>--intervals<span class="w"> </span>/workspace/gitpod/nf-training/variantcalling/exome_target_hg38_chr21.bed<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>--intervals<span class="w"> </span>/workspace/gitpod/training/exome_target_hg38_chr21.bed<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>--wes
 </code></pre></div>
 <p>Notice that we have selected <code>--joint_germline</code> to enable the joint-genotyping workflow, we have specified our library strategy is using a capture with <code>--wes</code> and we have provided a bed file with the targets with <code>--intervals</code>.
