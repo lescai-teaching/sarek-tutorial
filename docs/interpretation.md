@@ -15,9 +15,8 @@ When variants have been called, and a diagnosis is necessary, investigators will
 with the goal of narrowing the search space and reducing the number of variants to be inspected.
 This approach is summarised in the diagram below:
 
-<figure class="excalidraw">
---8<-- "docs/variantcalling/img/interpretation.excalidraw.svg"
-</figure>
+![interpretation](.img/interpretation.excalidraw.svg)
+
 
 Once the list of variants has been reduced, more in-depth analyses of the reported cases and the genomic region in existing databases might be useful to reach a conclusion.
 
@@ -28,7 +27,7 @@ Some of these steps might be carried out via software. For this tutorial however
 We will start by looking at the annotated VCF, which is found at this location in our GitPod environment:
 
 ```bash
-cd /workspace/gitpod/nf-training/variantcalling/annotation/haplotypecaller/joint_variant_calling
+cd /workspace/gitpod/training/annotation/haplotypecaller/joint_variant_calling
 ```
 
 Here, we should verify in which order the two samples we used for this analysis have been written in the VCF file. We can do that by grepping the column names row of the file, and printing at screen the fields from 10th onwards, i.e. the sample columns:
