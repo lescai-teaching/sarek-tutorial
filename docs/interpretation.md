@@ -15,7 +15,7 @@ When variants have been called, and a diagnosis is necessary, investigators will
 with the goal of narrowing the search space and reducing the number of variants to be inspected.
 This approach is summarised in the diagram below:
 
-![interpretation](.img/interpretation.excalidraw.svg)
+![interpretation](./img/interpretation.excalidraw.svg)
 
 
 Once the list of variants has been reduced, more in-depth analyses of the reported cases and the genomic region in existing databases might be useful to reach a conclusion.

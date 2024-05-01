@@ -587,14 +587,12 @@ For large population studies, like case-control association analyses, an appropr
 </ul>
 <p>with the goal of narrowing the search space and reducing the number of variants to be inspected.
 This approach is summarised in the diagram below:</p>
-<figure class="excalidraw">
-</figure>
-
+<p><img alt="interpretation" src=".img/interpretation.excalidraw.svg" /></p>
 <p>Once the list of variants has been reduced, more in-depth analyses of the reported cases and the genomic region in existing databases might be useful to reach a conclusion.</p>
 <h2 id="finding-causative-variants">Finding Causative Variants<a class="headerlink" href="#finding-causative-variants" title="Permanent link">&para;</a></h2>
 <p>Some of these steps might be carried out via software. For this tutorial however, we chose to perform these steps one by one in order to get a better view of the rationale behind this approach.</p>
 <p>We will start by looking at the annotated VCF, which is found at this location in our GitPod environment:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/workspace/gitpod/nf-training/variantcalling/annotation/haplotypecaller/joint_variant_calling
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/workspace/gitpod/training/annotation/haplotypecaller/joint_variant_calling
 </code></pre></div>
 <p>Here, we should verify in which order the two samples we used for this analysis have been written in the VCF file. We can do that by grepping the column names row of the file, and printing at screen the fields from 10th onwards, i.e. the sample columns:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>zcat<span class="w"> </span>joint_germline_recalibrated_snpEff.ann.vcf.gz<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;#CHROM&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-f<span class="w"> </span><span class="m">10</span>-
