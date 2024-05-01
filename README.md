@@ -3,6 +3,10 @@
 
 Welcome to the a this repository to guide you through the pipeline [nf-core/sarek](https://nf-co.re/sarek)!
 
+## Training website
+
+This tutorial is available at this website [https://lescai-teaching.github.io/sarek-tutorial/](https://lescai-teaching.github.io/sarek-tutorial/)
+
 
 ## Running with Gitpod
 
