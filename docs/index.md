@@ -12,6 +12,7 @@ In this workshop, we will recap the application of next generation sequencing to
 Please note that this is not an introductory workshop, and we will assume some basic familiarity with Nextflow.
 
 By the end of this workshop, you will be able to:
+
 - understand the key concepts behind variant calling, as adopted in this pipeline
 - analyse simple NGS datasets with the sarek workflow 
 - customise some of its features for your own variant calling analyses
