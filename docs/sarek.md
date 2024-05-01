@@ -126,7 +126,7 @@ process {
 Now we are ready to launch the pipeline, and we can use the following command line:
 
 ```bash
-nextflow run nf-core/sarek \
+nextflow run nf-core/sarek -r 3.3.2 \
 --input /workspace/gitpod/training/data/reads/sarek-input.csv \
 --outdir . \
 --tools haplotypecaller,snpeff \
